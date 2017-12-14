@@ -40,6 +40,10 @@
         <!--see http://stackoverflow.com/questions/38200282/android-os-fileuriexposedexception-file-storage-emulated-0-test-txt-exposed-->
         <framework src="com.android.support:support-v4:+" />
 
+        <framework src="src/android/pdfviewer.gradle" custom="true" type="gradleReference"/>
+        <resource-file src="src/android/android-document-viewer.aar" target="libs/android-document-viewer.aar"/>
+        <resource-file src="src/android/mupdf-for-cleverdox.aar" target="libs/mupdf-for-cleverdox.aar"/>
+
         <config-file target="AndroidManifest.xml" parent="/manifest/application">
 
              <provider

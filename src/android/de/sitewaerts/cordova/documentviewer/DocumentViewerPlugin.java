@@ -516,7 +516,8 @@ public final class DocumentViewerPlugin
                 intent.putExtra(this.getClass().getName(), viewerOptions);
                 //activity needs fully qualified name here
                 intent.setComponent(
-                        new ComponentName(packageId, packageId + "." + activity)
+                        // new ComponentName(packageId, packageId + "." + activity)
+                        new ComponentName(packageId, activity)
                 );
 
                 this.callbackContext = callbackContext;
